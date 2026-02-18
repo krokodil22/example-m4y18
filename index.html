@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Достопримечательности мира</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">WorldTrips</div>
+    <nav class="topnav">
+      <a href="#places">Места</a>
+      <a href="#map">Маршрут</a>
+      <a href="#tips">Советы</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#save">Сохранить</a>
+    </nav>
+  </header>
+
+  <div class="progressbar">
+    <span class="progressbar__fill"></span>
+  </div>
+
+  <div class="page-sticker">Топ-7 мест</div>
+
+  <main class="page">
+
+    <section class="hero">
+      <div class="hero__text">
+        <p class="tag">Путешествия • География • Культура</p>
+        <h1>Достопримечательности мира</h1>
+        <p class="lead">
+          Учебный сайт-путеводитель: карточки мест, мини-маршрут и советы для путешественника.
+        </p>
+
+        <div class="hero__buttons">
+          <a class="btn btn--primary" href="#places">Открыть места</a>
+          <a class="btn btn--ghost" href="#save">Сохранить маршрут</a>
+        </div>
+      </div>
+
+      <div class="hero__preview">
+        <div class="preview-card">
+          <span class="badge">Путеводитель</span>
+          <span class="pin pin--a" aria-hidden="true"></span>
+          <span class="pin pin--b" aria-hidden="true"></span>
+
+          <h2 class="preview-title">Места, которые стоит увидеть</h2>
+          <p class="muted">Короткие описания, оценки и маршрут на неделю.</p>
+
+          <div class="stat-row">
+            <div class="stat"><b>Формат:</b> карточки</div>
+            <div class="stat"><b>Темы:</b> континенты</div>
+            <div class="stat"><b>План:</b> 7 дней</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="places" class="block">
+      <div class="block__head">
+        <h2>Топ-достопримечательности</h2>
+        <p class="muted">Выбирай места и составляй свой маршрут.</p>
+      </div>
+
+      <div class="grid">
+        <article class="place place--rel">
+          <span class="label">Европа</span>
+          <h3>Эйфелева башня</h3>
+          <p>Париж, символ Франции и один из самых узнаваемых видов в мире.</p>
+          <span class="rate">★ 9/10</span>
+        </article>
+
+        <article class="place place--rel">
+          <span class="label">Азия</span>
+          <h3>Тадж-Махал</h3>
+          <p>Индия, мавзолей из белого мрамора и легендарная история любви.</p>
+          <span class="rate">★ 10/10</span>
+        </article>
+
+        <article class="place place--rel">
+          <span class="label">Америка</span>
+          <h3>Статуя Свободы</h3>
+          <p>Нью-Йорк, один из главных памятников США и символ свободы.</p>
+          <span class="rate">★ 8/10</span>
+        </article>
+
+        <article class="place place--rel">
+          <span class="label">Африка</span>
+          <h3>Пирамиды Гизы</h3>
+          <p>Египет, древнее чудо света и загадки истории.</p>
+          <span class="rate">★ 10/10</span>
+        </article>
+
+        <article class="place place--rel">
+          <span class="label">Океания</span>
+          <h3>Сиднейская опера</h3>
+          <p>Австралия, архитектурный символ и центр культурных событий.</p>
+          <span class="rate">★ 9/10</span>
+        </article>
+
+        <article class="place place--rel">
+          <span class="label">Европа</span>
+          <h3>Колизей</h3>
+          <p>Рим, древний амфитеатр и история гладиаторов.</p>
+          <span class="rate">★ 9/10</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="map" class="block">
+      <div class="block__head">
+        <h2>Маршрут на 7 дней</h2>
+        <p class="muted">Идея: один день — один город.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="step">
+          <div class="step__num">1</div>
+          <h3>Париж</h3>
+          <p>Башня + прогулка по набережной.</p>
+          <span class="step__status ok">Лёгкий</span>
+        </article>
+
+        <article class="step">
+          <div class="step__num">2</div>
+          <h3>Рим</h3>
+          <p>Колизей + исторический центр.</p>
+          <span class="step__status ok">Лёгкий</span>
+        </article>
+
+        <article class="step">
+          <div class="step__num">3</div>
+          <h3>Каир</h3>
+          <p>Пирамиды + музей.</p>
+          <span class="step__status mid">Средний</span>
+        </article>
+
+        <article class="step">
+          <div class="step__num">4</div>
+          <h3>Агра</h3>
+          <p>Тадж-Махал утром.</p>
+          <span class="step__status mid">Средний</span>
+        </article>
+
+        <article class="step">
+          <div class="step__num">5</div>
+          <h3>Нью-Йорк</h3>
+          <p>Статуя Свободы + парк.</p>
+          <span class="step__status ok">Лёгкий</span>
+        </article>
+
+        <article class="step">
+          <div class="step__num">6</div>
+          <h3>Сидней</h3>
+          <p>Опера + набережная.</p>
+          <span class="step__status hard">Сложный</span>
+        </article>
+
+        <article class="step">
+          <div class="step__num">7</div>
+          <h3>День отдыха</h3>
+          <p>Фото, заметки, выбор любимого места.</p>
+          <span class="step__status ok">Лёгкий</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="tips" class="block">
+      <div class="block__head">
+        <h2>Советы путешественнику</h2>
+        <p class="muted">Короткие правила, чтобы поездка была комфортной.</p>
+      </div>
+
+      <div class="notes">
+        <article class="note">
+          <h3>Планируй время</h3>
+          <p>Лучшее время для фото — утром или ближе к закату.</p>
+        </article>
+
+        <article class="note">
+          <h3>Пей воду</h3>
+          <p>В жарких странах всегда держи воду под рукой.</p>
+        </article>
+
+        <article class="note">
+          <h3>Удобная обувь</h3>
+          <p>Прогулок будет много — комфорт важнее красоты.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="block">
+      <div class="block__head">
+        <h2>Галерея</h2>
+        <p class="muted">Здесь можно вставить свои фотографии путешествий.</p>
+      </div>
+
+      <div class="gallery">
+        <div class="photo">Фото 1</div>
+        <div class="photo">Фото 2</div>
+        <div class="photo">Фото 3</div>
+        <div class="photo">Фото 4</div>
+      </div>
+    </section>
+
+    <section id="save" class="block save">
+      <div class="save__left">
+        <h2>Сохранить маршрут</h2>
+        <p>Собери список мест и поделись с друзьями.</p>
+        <ul>
+          <li>Выбери 3–5 мест</li>
+          <li>Запиши даты</li>
+          <li>Добавь бюджет и заметки</li>
+        </ul>
+      </div>
+
+      <div class="save__right">
+        <div class="ticket">
+          <h3>Мини-памятка</h3>
+          <p><b>Документы:</b> паспорт, страховка</p>
+          <p><b>Связь:</b> карта, зарядка</p>
+          <p class="small">WorldTrips • Учебный макет</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a class="to-top" href="#">↑</a>
+
+  <footer class="footer">
+    <p>Учебный сайт • © WorldTrips</p>
+  </footer>
+
+</body>
+</html>
